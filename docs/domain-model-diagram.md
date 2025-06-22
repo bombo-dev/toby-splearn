@@ -13,6 +13,4 @@ erDiagram
     SECTION ||--o{ LESSON : _
 
     ENROLLMENT }o--|| LECTURE : _
-
-    LECTURE_PROGRESS ||--|| MEMBER : _
 ```
