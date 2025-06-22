@@ -8,9 +8,7 @@ erDiagram
     LECTURE ||--o{ SECTION : _
     LECTURE ||--o{ LESSON : _
     
-    LECTURE ||--|| LECTURE_ENROLLMENT : _
-    LECTURE_ENROLLMENT ||--|| LECTURE_PROGRESS : _
-    LECTURE_ENROLLMENT ||--|| ENROLLMENT: _
+    ENROLLMENT ||--|o LECTURE_PROGRESS : _
 
     SECTION ||--o{ LESSON : _
 
