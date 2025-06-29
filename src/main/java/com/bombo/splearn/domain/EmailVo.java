@@ -1,7 +1,9 @@
 package com.bombo.splearn.domain;
 
+import jakarta.persistence.Embeddable;
 import java.util.regex.Pattern;
 
+@Embeddable
 public record EmailVo(String email) {
 
     private static final Pattern EMAIL_PATTERN =
