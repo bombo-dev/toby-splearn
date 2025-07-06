@@ -15,11 +15,11 @@ class MemberTest {
     @BeforeEach
     void setUp() {
         this.passwordEncoder = new FakePasswordEncoder();
-        member = Member.create(1L, "bombo-dev@github.com", "bombo", "password", passwordEncoder);
+        member = Member.register(MemberFixture.defaultMemberCreateAction(), passwordEncoder);
     }
 
     @Test
-    void createMember() {
+    void registerMember() {
         assertThat(member.getStatus()).isEqualTo(MemberStatus.PENDING);
     }
 
